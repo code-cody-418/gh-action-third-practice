@@ -13,6 +13,7 @@ jobs:
       - name: Run Tests
         run: npm run test
   deploy:
+    needs: prep
     runs-on: ubuntu-latest
     steps:
       - name: Deployment Mock
