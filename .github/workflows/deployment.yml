@@ -12,3 +12,8 @@ jobs:
         run: npm run lint
       - name: Run Tests
         run: npm run test
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deployment Mock
+        run: echo "Deployment completed"
